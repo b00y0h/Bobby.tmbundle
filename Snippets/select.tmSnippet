@@ -3,15 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;!-- ${1:Brief Description} --&gt;
-&lt;div class="control-group question"&gt;
+	<string>&lt;div class="control-group question"&gt;
   &lt;label for="${2:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}" class="control-label"&gt;&lt;?php _e('${3:$1}', '${4:C66}'); ?&gt;&lt;/label&gt;
   &lt;div class="controls input choice"&gt;
     &lt;select name="${5:ARRAY}[${6:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]" id="${7:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}"&gt;
-      &lt;option value="${8}"&gt;${9:$8}&lt;/option&gt;
+      &lt;option value="${8}"&gt;&lt;?php _e( '${9:$8}', '$4'); ?&gt;${9:$8}&lt;/option&gt;
       $0
     &lt;/select&gt;
-    ${10:&lt;p class="help-block"&gt;${11:Help Text}&lt;/p&gt;}
+    ${10:&lt;p class="help-block"&gt;&lt;?php _e( '${11:Help Text}', '$4'); ?&gt;&lt;/p&gt;}
   &lt;/div&gt;
 &lt;/div&gt;
 </string>

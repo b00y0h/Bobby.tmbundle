@@ -4,7 +4,7 @@ Textbox
   <label for="${2:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}" class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
   <div class="controls input">
     <input type="text" name="${5:ARRAY}[${6:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]" value="${7:<?php echo htmlentities(${8:C66_SettingManager}::get_value('${9:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}'));  ?>}" id="${10:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}">
-    ${11:<p class="help-block">${12:Help Text}</p>}
+    ${11:<p class="help-block"><?php _e( '${12:Help Text}', '$4'); ?></p>}
   </div>
 </div>
 <!-- ^^^^^ $1 ^^^^^^ -->
@@ -14,15 +14,15 @@ Radios|Checkbox
 <div class="control-group question">
   <label for="${2:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}" class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
   <div class="controls input choice">
-    <label class="${5:radio|checkbox}${6: inline}"><input type="$6" name="${7:ARRAY}[${8:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]" value="${9:active|inactive|yes|no}">${10:$9}</label>
+    <label class="${5:radio|checkbox}${6: inline}"><input type="$6" name="${7:ARRAY}[${8:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]" value="${9:active|inactive|yes|no}"><?php _e('${10:$9}', '$4'); ?></label>
     ${0:<-- to enter another label, type 'label' then <tab> -->}
-    ${11:<p class="help-block">${12:Help Text}</p>}
+    ${11:<p class="help-block"><?php _e( '${12:Help Text}', '$4'); ?></p>}
   </div>
 </div>
 <!-- ^^^^^ $1 ^^^^^^ -->
 
 label
-<label class="${1:radio|checkbox}${2: inline}"><input type="$1" name="${3:ARRAY}[${4:value}]" value="${5:active|inactive|yes|no}">${6:$5}</label>
+<label class="${1:radio|checkbox}${2: inline}"><input type="$1" name="${3:ARRAY}[${4:value}]" value="${5:active|inactive|yes|no}"><?php _e('${6:$5}', '${7:C66}'); ?></label>
 
 Textarea
 <!-- ${1:Brief Description} -->
@@ -30,9 +30,11 @@ Textarea
   <label for="${2:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}" class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
   <div class="controls input">
     <textarea id="${2:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}" name="${5:ARRAY}[${6:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]"></textarea>
-    ${6:<p class="help-block">${7:Help Text}</p>}
+    ${6:<p class="help-block"><?php _e( '${7:Help Text}', '$4'); ?></p>}
   </div>
 </div>
+<!-- ^^^^^ $1 ^^^^^^ -->
+
 
 Select
 <!-- ${1:Brief Description} -->
@@ -40,9 +42,10 @@ Select
   <label for="${2:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}" class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
   <div class="controls input choice">
     <select name="${5:ARRAY}[${6:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]" id="${7:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}">
-      <option value="${8}">${9:$8}</option>
+      <option value="${8}"><?php _e( '${9:$8}', '$4'); ?>${9:$8}</option>
       $0
     </select>
-    ${10:<p class="help-block">${11:Help Text}</p>}
+    ${10:<p class="help-block"><?php _e( '${11:Help Text}', '$4'); ?></p>}
   </div>
 </div>
+<!-- ^^^^^ $1 ^^^^^^ -->
