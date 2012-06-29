@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;label class="${1:radio|checkbox}${2: inline}"&gt;&lt;input type="$1" name="${3:ARRAY}[${4:value}]" value="${5:active|inactive|yes|no}"&gt;${6:$5}&lt;/label&gt;
+</string>
+	<key>name</key>
+	<string>label (radio|checkbox)</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>label</string>
+	<key>uuid</key>
+	<string>755CBFCF-2C32-48D6-8AC2-FF4F6DF77EF3</string>
+</dict>
+</plist>

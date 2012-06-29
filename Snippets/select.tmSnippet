@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!-- ${1:Brief Description} --&gt;
+&lt;div class="control-group question"&gt;
+  &lt;label for="${2:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}" class="control-label"&gt;&lt;?php _e('${3:$1}', '${4:C66}'); ?&gt;&lt;/label&gt;
+  &lt;div class="controls input choice"&gt;
+    &lt;select name="${5:ARRAY}[${6:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]" id="${7:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}"&gt;
+      &lt;option value="${8}"&gt;${9:$8}&lt;/option&gt;
+      $0
+    &lt;/select&gt;
+    ${10:&lt;p class="help-block"&gt;${11:Help Text}&lt;/p&gt;}
+  &lt;/div&gt;
+&lt;/div&gt;
+</string>
+	<key>name</key>
+	<string>select</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>bform</string>
+	<key>uuid</key>
+	<string>643BDD30-0A2C-41AF-A593-2D60FFB165C3</string>
+</dict>
+</plist>
