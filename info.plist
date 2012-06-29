@@ -4,6 +4,14 @@
 <dict>
 	<key>name</key>
 	<string>Bobby</string>
+	<key>ordering</key>
+	<array>
+		<string>6332859A-BACB-4C71-9294-8A898FB94DFE</string>
+		<string>35F3E7E8-50F5-4492-9144-254077373437</string>
+		<string>643BDD30-0A2C-41AF-A593-2D60FFB165C3</string>
+		<string>4298A8AF-9B7B-49DB-97CF-FE21F2E96168</string>
+		<string>755CBFCF-2C32-48D6-8AC2-FF4F6DF77EF3</string>
+	</array>
 	<key>uuid</key>
 	<string>A86E1B1D-ACA7-47E5-BEB2-5364308BABEA</string>
 </dict>
