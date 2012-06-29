@@ -7,8 +7,8 @@
 &lt;div class="control-group question"&gt;
   &lt;label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"&gt;&lt;?php _e('${3:$1}', '${4:C66}'); ?&gt;&lt;/label&gt;
   &lt;div class="controls input choice"&gt;
-    &lt;label class="radio inline"&gt;&lt;input type="radio" name="${20:${7:ARRAY}${8:[${9:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]}}" &lt;?php echo ${11:C66_SettingManager}::get_value('$20') == 1 ? 'checked="checked" ' : '' ?&gt; value="1"&gt;&lt;?php _e('Yes', '$4'); ?&gt;&lt;/label&gt;
-    &lt;label class="radio inline"&gt;&lt;input type="radio" name="$20" &lt;?php echo ${11:C66_SettingManager}::get_value('$20') != 1 ? 'checked="checked" ' : '' ?&gt; value=""&gt;&lt;?php _e('No', '$4'); ?&gt;&lt;/label&gt;    
+    &lt;label class="radio inline"&gt;&lt;input type="radio" name="${20:${7:ARRAY}${8:[${9:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]}}" id="$20_yes" &lt;?php echo ${11:C66_SettingManager}::get_value('$20') == 1 ? 'checked="checked" ' : '' ?&gt; value="1"&gt;&lt;?php _e('Yes', '$4'); ?&gt;&lt;/label&gt;
+    &lt;label class="radio inline"&gt;&lt;input type="radio" name="$20" id="$20_no" &lt;?php echo ${11:C66_SettingManager}::get_value('$20') != 1 ? 'checked="checked" ' : '' ?&gt; value=""&gt;&lt;?php _e('No', '$4'); ?&gt;&lt;/label&gt;    
     ${12:&lt;p class="help-block"&gt;&lt;?php _e( '${13:Help Text}', '$4'); ?&gt;&lt;/p&gt;}
   &lt;/div&gt;
 &lt;/div&gt;
