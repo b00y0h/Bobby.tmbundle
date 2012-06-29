@@ -12,7 +12,7 @@ Textbox
 Radios|Checkbox
 <!-- ${1:Brief Description} -->
 <div class="control-group question">
-  <label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
+  <label class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
   <div class="controls input choice">
     <label class="${5:radio|checkbox}${6: inline}"><input type="$5" name="${7:ARRAY}[${8:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]" value="${9:active|inactive|yes|no}"><?php _e('${10:$9}', '$4'); ?></label>
     ${0:<-- to enter another label, type 'label' then <tab> -->}
@@ -24,7 +24,7 @@ Radios|Checkbox
 Radios Yes|No
 <!-- ${1:Brief Description} -->
 <div class="control-group question">
-  <label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
+  <label class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
   <div class="controls input choice">
     <label class="radio inline"><input type="radio" name="${20:${7:ARRAY}${8:[${9:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]}}" id="$20_yes" <?php echo ${11:C66_SettingManager}::get_value('$20') == 1 ? 'checked="checked" ' : '' ?> value="1"><?php _e('Yes', '$4'); ?></label>
     <label class="radio inline"><input type="radio" name="$20" id="$20_no" <?php echo ${11:C66_SettingManager}::get_value('$20') != 1 ? 'checked="checked" ' : '' ?> value=""><?php _e('No', '$4'); ?></label>    
@@ -56,8 +56,8 @@ Textarea
 <div class="control-group question">
   <label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
   <div class="controls input">
-    <textarea id="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" name="${5:ARRAY}[${6:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]"></textarea>
-    ${6:<p class="help-block"><?php _e( '${7:Help Text}', '$4'); ?></p>}
+    <textarea name="${20:${5:ARRAY}${6:[${9:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]}}" id="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}"></textarea>
+    ${7:<p class="help-block"><?php _e( '${8:Help Text}', '$4'); ?></p>}
   </div>
 </div>
 <!-- ^^^^^ $1 ^^^^^^ -->
