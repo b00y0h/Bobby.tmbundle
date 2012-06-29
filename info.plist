@@ -4,14 +4,6 @@
 <dict>
 	<key>changed</key>
 	<dict>
-		<key>deleted</key>
-		<array>
-			<string>B4E9F235-0BC7-4FAE-8DDF-3831AFA15A5E</string>
-			<string>40D56312-0B86-45F5-9CC4-520795544A4C</string>
-			<string>D3793CB3-5284-45D2-B736-A3D19D9BF67E</string>
-		</array>
-		<key>name</key>
-		<string>Bobby's Bundle</string>
 		<key>ordering</key>
 		<array>
 			<string>35F3E7E8-50F5-4492-9144-254077373437</string>
