@@ -2,23 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>changed</key>
-	<dict>
-		<key>ordering</key>
-		<array>
-			<string>35F3E7E8-50F5-4492-9144-254077373437</string>
-			<string>6332859A-BACB-4C71-9294-8A898FB94DFE</string>
-			<string>643BDD30-0A2C-41AF-A593-2D60FFB165C3</string>
-			<string>755CBFCF-2C32-48D6-8AC2-FF4F6DF77EF3</string>
-			<string>0B53C942-BF37-495A-9B7D-F5B0E8F962F3</string>
-			<string>F5AE6004-D143-49DD-A453-17391839E498</string>
-		</array>
-	</dict>
-	<key>deleted</key>
-	<array/>
-	<key>isDelta</key>
-	<true/>
+	<key>name</key>
+	<string>Bobby</string>
 	<key>uuid</key>
-	<string>7B2B8B1C-3933-469A-9085-3441C598BA2B</string>
+	<string>A86E1B1D-ACA7-47E5-BEB2-5364308BABEA</string>
 </dict>
 </plist>
