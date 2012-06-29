@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>&lt;!-- ${1:Brief Description} --&gt;
 &lt;div class="control-group question"&gt;
-  &lt;label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"&gt;&lt;?php _e('${3:$1}', '${4:C66}'); ?&gt;&lt;/label&gt;
+  &lt;label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"&gt;&lt;?php _e('${3:$1}', '${4:${MY_LOCALIZE:SET VARIABLE MY_LOCALIZE}}'); ?&gt;&lt;/label&gt;
   &lt;div class="controls input"&gt;
     &lt;input type="text" name="${5:${6:ARRAY}[${7:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]}" value="${8:&lt;?php echo ${9:C66_SettingManager}::get_value('${10:$7}');  ?&gt;}" id="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}"&gt;
     ${12:&lt;p class="help-block"&gt;&lt;?php _e( '${13:Help Text}', '$4'); ?&gt;&lt;/p&gt;}

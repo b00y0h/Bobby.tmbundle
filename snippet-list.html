@@ -1,7 +1,7 @@
 Textbox
 <!-- ${1:Brief Description} -->
 <div class="control-group question">
-  <label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
+  <label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"><?php _e('${3:$1}', '${4:${MY_LOCALIZE:SET VARIABLE MY_LOCALIZE}}'); ?></label>
   <div class="controls input">
     <input type="text" name="${5:${6:ARRAY}[${7:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]}" value="${8:<?php echo ${9:C66_SettingManager}::get_value('${10:$7}');  ?>}" id="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}">
     ${12:<p class="help-block"><?php _e( '${13:Help Text}', '$4'); ?></p>}
@@ -12,7 +12,7 @@ Textbox
 Radios|Checkbox
 <!-- ${1:Brief Description} -->
 <div class="control-group question">
-  <label class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
+  <label class="control-label"><?php _e('${3:$1}', '${4:${MY_LOCALIZE:SET VARIABLE MY_LOCALIZE}}'); ?></label>
   <div class="controls input choice">
     <label class="${5:radio|checkbox}${6: inline}"><input type="$5" name="${7:ARRAY}[${8:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]" value="${9:active|inactive|yes|no}"><?php _e('${10:$9}', '$4'); ?></label>
     ${0:<-- to enter another label, type 'label' then <tab> -->}
@@ -24,7 +24,7 @@ Radios|Checkbox
 Radios Yes|No
 <!-- ${1:Brief Description} -->
 <div class="control-group question">
-  <label class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
+  <label class="control-label"><?php _e('${3:$1}', '${4:${MY_LOCALIZE:SET VARIABLE MY_LOCALIZE}}'); ?></label>
   <div class="controls input choice">
     <label class="radio inline"><input type="radio" name="${20:${7:ARRAY}${8:[${9:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]}}" id="$9_yes" <?php echo ${11:C66_SettingManager}::get_value('$9') == '1' ? 'checked="checked" ' : '' ?> value="1"><?php _e('Yes', '$4'); ?></label>
     <label class="radio inline"><input type="radio" name="$20" id="$9_no" <?php echo ${11:C66_SettingManager}::get_value('$9') != '1' ? 'checked="checked" ' : '' ?> value=""><?php _e('No', '$4'); ?></label>    
@@ -35,12 +35,12 @@ Radios Yes|No
 
 
 label
-<label class="${1:radio|checkbox}${2: inline}"><input type="$1" name="${3:ARRAY}[${4:value}]" value="${5:active|inactive|yes|no}"><?php _e('${6:$5}', '${7:C66}'); ?></label>
+<label class="${1:radio|checkbox}${2: inline}"><input type="$1" name="${3:ARRAY}[${4:value}]" value="${5:active|inactive|yes|no}"><?php _e('${6:$5}', '${7:${MY_LOCALIZE:SET VARIABLE MY_LOCALIZE}}'); ?></label>
 
 Select
 <!-- ${1:Brief Description} -->
 <div class="control-group question">
-  <label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
+  <label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"><?php _e('${3:$1}', '${4:${MY_LOCALIZE:SET VARIABLE MY_LOCALIZE}}'); ?></label>
   <div class="controls input choice">
     <select name="${5:ARRAY}[${6:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]" id="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}">
       <option value="${8}"><?php _e( '${9:$8}', '$4'); ?>${9:$8}</option>
@@ -54,7 +54,7 @@ Select
 Textarea
 <!-- ${1:Brief Description} -->
 <div class="control-group question">
-  <label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
+  <label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"><?php _e('${3:$1}', '${4:${MY_LOCALIZE:SET VARIABLE MY_LOCALIZE}}'); ?></label>
   <div class="controls input">
     <textarea name="${20:${5:ARRAY}${6:[${9:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]}}" id="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}"></textarea>
     ${7:<p class="help-block"><?php _e( '${8:Help Text}', '$4'); ?></p>}
