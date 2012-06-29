@@ -3,7 +3,7 @@ Textbox
 <div class="control-group question">
   <label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
   <div class="controls input">
-    <input type="text" name="${5:${6:ARRAY}[${7:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]}" value="${8:<?php echo ${9:C66_SettingManager}::get_value('$5');  ?>}" id="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}">
+    <input type="text" name="${5:${6:ARRAY}[${7:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]}" value="${8:<?php echo ${9:C66_SettingManager}::get_value('${10:$7}');  ?>}" id="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}">
     ${12:<p class="help-block"><?php _e( '${13:Help Text}', '$4'); ?></p>}
   </div>
 </div>
