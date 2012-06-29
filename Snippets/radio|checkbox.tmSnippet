@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>&lt;!-- ${1:Brief Description} --&gt;
 &lt;div class="control-group question"&gt;
-  &lt;label for="${2:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}" class="control-label"&gt;&lt;?php _e('${3:$1}', '${4:C66}'); ?&gt;&lt;/label&gt;
+  &lt;label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"&gt;&lt;?php _e('${3:$1}', '${4:C66}'); ?&gt;&lt;/label&gt;
   &lt;div class="controls input choice"&gt;
     &lt;label class="${5:radio|checkbox}${6: inline}"&gt;&lt;input type="$5" name="${7:ARRAY}[${8:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]" value="${9:active|inactive|yes|no}"&gt;&lt;?php _e('${10:$9}', '$4'); ?&gt;&lt;/label&gt;
     ${0:&lt;-- to enter another label, type 'label' then &lt;tab&gt; --&gt;}

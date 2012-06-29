@@ -5,9 +5,9 @@
 	<key>content</key>
 	<string>&lt;!-- ${1:Brief Description} --&gt;
 &lt;div class="control-group question"&gt;
-  &lt;label for="${2:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}" class="control-label"&gt;&lt;?php _e('${3:$1}', '${4:C66}'); ?&gt;&lt;/label&gt;
+  &lt;label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"&gt;&lt;?php _e('${3:$1}', '${4:C66}'); ?&gt;&lt;/label&gt;
   &lt;div class="controls input"&gt;
-    &lt;textarea id="${2:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}" name="${5:ARRAY}[${6:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]"&gt;&lt;/textarea&gt;
+    &lt;textarea id="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" name="${5:ARRAY}[${6:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]"&gt;&lt;/textarea&gt;
     ${6:&lt;p class="help-block"&gt;&lt;?php _e( '${7:Help Text}', '$4'); ?&gt;&lt;/p&gt;}
   &lt;/div&gt;
 &lt;/div&gt;
