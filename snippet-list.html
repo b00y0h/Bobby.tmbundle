@@ -26,9 +26,9 @@ Radios Yes|No
 <div class="control-group question">
   <label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
   <div class="controls input choice">
-    <label class="radio inline"><input type="radio" name="${20:${7:ARRAY}${8:[${9:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]}}" value="1" <?php echo ${11:C66_SettingManager}::get_value('$20');  ?> == 1 ? 'checked="checked" ' : '' ?>><?php _e('Yes', '$4'); ?></label>
-    <label class="radio inline"><input type="radio" name="$20" value="" <?php echo ${11:C66_SettingManager}::get_value('$20');  ?> != 1 ? 'checked="checked" ' : '' ?>><?php _e('No', '$4'); ?></label>    
-    ${11:<p class="help-block"><?php _e( '${12:Help Text}', '$4'); ?></p>}
+    <label class="radio inline"><input type="radio" name="${20:${7:ARRAY}${8:[${9:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]}}" <?php echo ${11:C66_SettingManager}::get_value('$20');  ?> == 1 ? 'checked="checked" ' : '' ?> value="1"><?php _e('Yes', '$4'); ?></label>
+    <label class="radio inline"><input type="radio" name="$20" <?php echo ${11:C66_SettingManager}::get_value('$20');  ?> != 1 ? 'checked="checked" ' : '' ?> value=""><?php _e('No', '$4'); ?></label>    
+    ${12:<p class="help-block"><?php _e( '${13:Help Text}', '$4'); ?></p>}
   </div>
 </div>
 <!-- ^^^^^ $1 ^^^^^^ -->
@@ -36,18 +36,6 @@ Radios Yes|No
 
 label
 <label class="${1:radio|checkbox}${2: inline}"><input type="$1" name="${3:ARRAY}[${4:value}]" value="${5:active|inactive|yes|no}"><?php _e('${6:$5}', '${7:C66}'); ?></label>
-
-Textarea
-<!-- ${1:Brief Description} -->
-<div class="control-group question">
-  <label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
-  <div class="controls input">
-    <textarea id="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" name="${5:ARRAY}[${6:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]"></textarea>
-    ${6:<p class="help-block"><?php _e( '${7:Help Text}', '$4'); ?></p>}
-  </div>
-</div>
-<!-- ^^^^^ $1 ^^^^^^ -->
-
 
 Select
 <!-- ${1:Brief Description} -->
@@ -62,3 +50,16 @@ Select
   </div>
 </div>
 <!-- ^^^^^ $1 ^^^^^^ -->
+
+Textarea
+<!-- ${1:Brief Description} -->
+<div class="control-group question">
+  <label for="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" class="control-label"><?php _e('${3:$1}', '${4:C66}'); ?></label>
+  <div class="controls input">
+    <textarea id="${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}" name="${5:ARRAY}[${6:${1/(\s+)|(.)/(?1:_)(?2:\L$2)/g}}]"></textarea>
+    ${6:<p class="help-block"><?php _e( '${7:Help Text}', '$4'); ?></p>}
+  </div>
+</div>
+<!-- ^^^^^ $1 ^^^^^^ -->
+
+
